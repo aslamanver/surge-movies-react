@@ -35,7 +35,7 @@ If the build status is passing, there is no error with any build configurations 
 
 3. Replace API_KEY obtained from [https://www.themoviedb.org](https://www.themoviedb.org)
 
-4. Run `echo "export const API_KEY = '9618b5cf6ae9661f92fff553c697bed4';" | cat > src/secrets/index.ts`
+4. Run `echo "export const API_KEY = 'YOUR_API_KEY';" | cat > src/secrets/index.ts`
 
 5. Run this for Android build  `npm run app`
 

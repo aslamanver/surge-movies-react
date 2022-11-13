@@ -6,7 +6,7 @@ Surge Movies is a mobile app that let you explore the best-rated movies in the w
 
 [surge-movies](https://aslamanver.github.io/surge-movies-react/) | [Create Issue](https://github.com/aslamanver/surge-movies-react/issues/new)
 
-[![Build Status](https://github.com/aslamanver/surge-movies-react/actions/workflows/dart.yml/badge.svg)](https://github.com/aslamanver/surge-movies-react/actions)
+[![Build Status](https://github.com/aslamanver/surge-movies-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/aslamanver/surge-movies-react/actions)
 
 <hr/>
 
@@ -26,7 +26,7 @@ Surge Movies is a mobile app that let you explore the best-rated movies in the w
 
 ## Developer Contributions
 
-> [![Build Status](https://github.com/aslamanver/surge-movies-react/actions/workflows/dart.yml/badge.svg)](https://github.com/aslamanver/surge-movies-react/actions)
+> [![Build Status](https://github.com/aslamanver/surge-movies-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/aslamanver/surge-movies-react/actions)
 If the build status is passing, there is no error with any build configurations and dependencies.
 
 1. Clone the project `git clone git@github.com:aslamanver/surge-movies-react.git`
@@ -43,5 +43,5 @@ If the build status is passing, there is no error with any build configurations 
 
 ## CI/CD
 
-1. GitHub Actions - [.github/workflows/dart.yml](https://github.com/aslamanver/surge-movies-react/blob/master/.github/workflows/dart.yml)
+1. GitHub Actions - [.github/workflows/dart.yml](https://github.com/aslamanver/surge-movies-react/blob/master/.github/workflows/node.js.yml)
 

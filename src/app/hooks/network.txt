@@ -1,0 +1,32 @@
+import {useEffect, useState} from 'react';
+import {Movie} from '../types';
+
+interface HttpState<S> {
+  isLoading: boolean;
+  response: S;
+  page: number;
+  isRefreshing: boolean;
+}
+
+export const useHttp = (_httpState: HttpState<Movie[]>) => {
+  //
+  const [httpState, setHttpState] = useState<HttpState<Movie[]>>(_httpState);
+
+  useEffect(() => {
+    console.log(`page: ${httpState.page} calling HTTP server...`);
+    setHttpState({...httpState, isLoading: true});
+    fetch(
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=KEY&page=${httpState.page}`,
+    )
+      .then(res => res.json())
+      .then(resJson => {
+        setHttpState({
+          ...httpState,
+          isLoading: false,
+          response: httpState.response.concat(resJson.results),
+        });
+      });
+  }, [httpState.page]);
+
+  return [httpState, setHttpState] as const;
+};

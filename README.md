@@ -43,5 +43,5 @@ If the build status is passing, there is no error with any build configurations 
 
 ## CI/CD
 
-1. GitHub Actions - [.github/workflows/dart.yml](https://github.com/aslamanver/surge-movies-react/blob/master/.github/workflows/node.js.yml)
+1. GitHub Actions - [.github/workflows/node.js.yml](https://github.com/aslamanver/surge-movies-react/blob/master/.github/workflows/node.js.yml)
 
